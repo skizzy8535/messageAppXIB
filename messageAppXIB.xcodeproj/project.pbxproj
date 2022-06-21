@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1702B22028619F6F008C4390 /* XIBmessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1702B21F28619F6F008C4390 /* XIBmessageCell.swift */; };
+		1702B2222861A057008C4390 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1702B2212861A057008C4390 /* Chat.swift */; };
+		173DD0E7286198A50017DF14 /* XIBChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173DD0E6286198A50017DF14 /* XIBChatViewController.swift */; };
+		173DD0E928619B010017DF14 /* XIBmessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 173DD0E828619B010017DF14 /* XIBmessageCell.xib */; };
 		17A0999C286154E4002C74CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A0999B286154E4002C74CD /* AppDelegate.swift */; };
 		17A0999E286154E4002C74CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A0999D286154E4002C74CD /* SceneDelegate.swift */; };
-		17A099A0286154E4002C74CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A0999F286154E4002C74CD /* ViewController.swift */; };
 		17A099A3286154E4002C74CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A099A1286154E4002C74CD /* Main.storyboard */; };
 		17A099A5286154E5002C74CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A099A4286154E5002C74CD /* Assets.xcassets */; };
 		17A099A8286154E5002C74CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A099A6286154E5002C74CD /* LaunchScreen.storyboard */; };
@@ -36,10 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1702B21F28619F6F008C4390 /* XIBmessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBmessageCell.swift; sourceTree = "<group>"; };
+		1702B2212861A057008C4390 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		173DD0E6286198A50017DF14 /* XIBChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBChatViewController.swift; sourceTree = "<group>"; };
+		173DD0E828619B010017DF14 /* XIBmessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBmessageCell.xib; sourceTree = "<group>"; };
 		17A09998286154E4002C74CD /* messageAppXIB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = messageAppXIB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A0999B286154E4002C74CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17A0999D286154E4002C74CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		17A0999F286154E4002C74CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		17A099A2286154E4002C74CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17A099A4286154E5002C74CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17A099A7286154E5002C74CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1702B21E28619F25008C4390 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				173DD0E6286198A50017DF14 /* XIBChatViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		17A0998F286154E4002C74CD = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +115,12 @@
 			children = (
 				17A0999B286154E4002C74CD /* AppDelegate.swift */,
 				17A0999D286154E4002C74CD /* SceneDelegate.swift */,
-				17A0999F286154E4002C74CD /* ViewController.swift */,
-				17A099A1286154E4002C74CD /* Main.storyboard */,
-				17A099A4286154E5002C74CD /* Assets.xcassets */,
 				17A099A6286154E5002C74CD /* LaunchScreen.storyboard */,
+				17A099A1286154E4002C74CD /* Main.storyboard */,
+				17A376F02861C38800C644DB /* Model */,
+				17A92BC72861C33E003DFC0D /* View */,
+				1702B21E28619F25008C4390 /* ViewController */,
+				17A099A4286154E5002C74CD /* Assets.xcassets */,
 				17A099A9286154E5002C74CD /* Info.plist */,
 			);
 			path = messageAppXIB;
@@ -125,6 +141,23 @@
 				17A099BE286154E5002C74CD /* messageAppXIBUITestsLaunchTests.swift */,
 			);
 			path = messageAppXIBUITests;
+			sourceTree = "<group>";
+		};
+		17A376F02861C38800C644DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1702B2212861A057008C4390 /* Chat.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17A92BC72861C33E003DFC0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1702B21F28619F6F008C4390 /* XIBmessageCell.swift */,
+				173DD0E828619B010017DF14 /* XIBmessageCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +267,7 @@
 				17A099A8286154E5002C74CD /* LaunchScreen.storyboard in Resources */,
 				17A099A5286154E5002C74CD /* Assets.xcassets in Resources */,
 				17A099A3286154E4002C74CD /* Main.storyboard in Resources */,
+				173DD0E928619B010017DF14 /* XIBmessageCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17A099A0286154E4002C74CD /* ViewController.swift in Sources */,
 				17A0999C286154E4002C74CD /* AppDelegate.swift in Sources */,
+				173DD0E7286198A50017DF14 /* XIBChatViewController.swift in Sources */,
 				17A0999E286154E4002C74CD /* SceneDelegate.swift in Sources */,
+				1702B2222861A057008C4390 /* Chat.swift in Sources */,
+				1702B22028619F6F008C4390 /* XIBmessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
